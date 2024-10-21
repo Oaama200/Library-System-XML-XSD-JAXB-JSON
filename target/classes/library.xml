@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Library>
+    <Author>
+        <AuthorID>1</AuthorID>
+        <FirstName>John</FirstName>
+        <LastName>Doe</LastName>
+        <Bio>Great Author</Bio>
+        <BirthDate>1980-01-01</BirthDate>
+    </Author>
+    <Book>
+        <BookID>1</BookID>
+        <Title>XML Basics</Title>
+        <ISBN>1234567890123</ISBN>
+        <publicationYear>2024</publicationYear>
+        <EditionNumber>7</EditionNumber>
+    </Book>
+    <Patron>
+        <PatronID>1</PatronID>
+        <FirstName>Alice</FirstName>
+        <LastName>Smith</LastName>
+        <Email>abcd@Email.com</Email>
+        <Phone>123456789</Phone>
+        <MembershipDate>2024-10-20</MembershipDate>
+        <MembershipType>Regular</MembershipType>
+    </Patron>
+    <Loan>
+        <LoanID>1</LoanID>
+        <BookID>1</BookID>
+        <PatronID>1</PatronID>
+        <LoanDate>2023-01-01</LoanDate>
+        <ReturnDate>2023-01-21</ReturnDate>
+    </Loan>
+    <Event>
+        <EventID>1</EventID>
+        <Name>Library Fundraiser</Name>
+        <Description>Funding the Library</Description>
+        <EventDate>2024-10-30</EventDate>
+        <EventLocation>123 street city</EventLocation>
+    </Event>
+</Library>
+

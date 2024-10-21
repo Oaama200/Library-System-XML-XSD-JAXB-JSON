@@ -1,0 +1,49 @@
+{
+  "authors": [
+    {
+      "authorId": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "bio": "Great Author",
+      "birthDate": "1980-01-01"
+    }
+  ],
+  "books": [
+    {
+      "bookId": 1,
+      "title": "XML Basics",
+      "isbn": "1234567890123",
+      "publicationYear": "2024",
+      "editionNumber": 7
+    }
+  ],
+  "patrons": [
+    {
+      "patronId": 1,
+      "firstName": "Alice",
+      "lastName": "Smith",
+      "email": "abcde@Email.com",
+      "phone": "123456789",
+      "membershipDate": "1980-01-01",
+      "membershipType": "Regular"
+    }
+  ],
+  "loans": [
+    {
+      "loanId": 1,
+      "bookId": 1,
+      "patronId": 1,
+      "loanDate": "2024-01-01",
+      "returnDate": "2024-01-30"
+    }
+  ],
+  "events": [
+    {
+      "eventId": 1,
+      "name": "Library Fundraiser",
+      "description": "Funding the Library",
+      "eventDate": "2024-10-30",
+      "eventLocation": "123 street city"
+    }
+  ]
+}

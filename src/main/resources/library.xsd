@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Library">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Author" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="AuthorID" type="xs:integer"/>
+                            <xs:element name="FirstName" type="xs:string"/>
+                            <xs:element name="LastName" type="xs:string"/>
+                            <xs:element name="Bio" type="xs:string"/>
+                            <xs:element name="BirthDate" type="xs:date"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Book" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="BookID" type="xs:integer"/>
+                            <xs:element name="Title" type="xs:string"/>
+                            <xs:element name="ISBN" type="xs:string"/>
+                            <xs:element name="publicationYear" type="xs:gYear"/>
+                            <xs:element name="EditionNumber" type="xs:int"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Patron" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="PatronID" type="xs:integer"/>
+                            <xs:element name="FirstName" type="xs:string"/>
+                            <xs:element name="LastName" type="xs:string"/>
+                            <xs:element name="Email" type="xs:string"/>
+                            <xs:element name="Phone" type="xs:string"/>
+                            <xs:element name="MembershipDate" type="xs:date"/>
+                            <xs:element name="MembershipType" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Loan" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="LoanID" type="xs:integer"/>
+                            <xs:element name="BookID" type="xs:integer"/>
+                            <xs:element name="PatronID" type="xs:integer"/>
+                            <xs:element name="LoanDate" type="xs:date"/>
+                            <xs:element name="ReturnDate" type="xs:date"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Event" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="EventID" type="xs:integer"/>
+                            <xs:element name="Name" type="xs:string"/>
+                            <xs:element name="Description" type="xs:string"/>
+                            <xs:element name="EventDate" type="xs:date"/>
+                            <xs:element name="EventLocation" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
